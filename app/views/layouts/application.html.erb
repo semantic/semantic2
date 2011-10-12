@@ -1,8 +1,5 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,17 +9,17 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <%= stylesheet_link_tag    "application" %>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/semantic.css">
 
+  <%= javascript_include_tag "application" %>
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/dbs0wlf.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <%#= javascript_include_tag :defaults %>
 
-  <%= csrf_meta_tag %>
+  <%= csrf_meta_tags %>
 </head>
-
 <body class="tk-museo-slab">
 <nav>
   <ul>
