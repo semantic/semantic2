@@ -15,7 +15,7 @@ role :db,  "braavos.itnig.net", :primary => true # This is where Rails migration
 
 set :branch, "master"
 set :keep_releases, 5
-set :deploy_to, "/var/www/rails/semantic.cat/current"
+set :deploy_to, "/var/www/rails/semantic.cat"
 set :deploy_via, :remote_cache
 
 set :user, "deployer"
