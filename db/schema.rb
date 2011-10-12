@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111012180456) do
+ActiveRecord::Schema.define(:version => 20111012180739) do
 
   create_table "episodes", :force => true do |t|
     t.string   "title"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20111012180456) do
     t.integer  "episode_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "amount"
   end
 
   create_table "taggables", :force => true do |t|
