@@ -6,4 +6,5 @@ class Sponsor < ActiveRecord::Base
 
   validates_presence_of :name
   validates_presence_of :logo
+  validates :amount, :numericality => { :greater_than_or_equal_to => 0.0 }, :presence => true
 end
