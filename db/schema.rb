@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111012164620) do
+ActiveRecord::Schema.define(:version => 20111012181646) do
 
   create_table "episodes", :force => true do |t|
     t.string   "title"
@@ -46,6 +46,22 @@ ActiveRecord::Schema.define(:version => 20111012164620) do
 
   create_table "tags", :force => true do |t|
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "email"
+    t.boolean  "host"
+    t.text     "bio"
+    t.text     "dump"
+    t.string   "screen_name"
+    t.string   "avatar_url"
+    t.string   "location"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
