@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :participations
+  has_many :episodes, :through => :participations
+
   def self.create_from_oauth!(auth)
     create! do |user|
       user.provider = auth["provider"]
@@ -12,4 +15,3 @@ class User < ActiveRecord::Base
     end
   end
 end
-

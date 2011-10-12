@@ -6,6 +6,8 @@ class Episode < ActiveRecord::Base
   has_many :sponsors, :through => :sponsorships
   has_many :taggables
   has_many :tags, :through => :taggables
+  has_many :participations
+  has_many :users, :through => :participations
 
   validates_presence_of :title
   validates :number, :numericality => { :only_integer => true, :greater_than_or_equal_to => 1 }, :presence => true
