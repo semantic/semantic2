@@ -1,0 +1,62 @@
+#container {
+  width: 90%;
+  margin: 1% 5%;
+}
+
+nav {
+  width: 90%;
+  background: #111111;
+  position: fixed;
+  top: 0;
+  padding: 5px 0;
+  width: 100%;
+  color: #DDDDDD;
+}
+
+nav ul {
+  width: 90%;
+  margin: 0 5%;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+header h1 {
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  -webkit-transition:color .4s ease-in;
+  transition:color .4s ease-in;
+}
+
+a:hover {
+  color: #FAA;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+article header h2, article header h1 {
+  margin: 0;
+}
+
+article header h2 {
+  color: #666;
+  font-size: 1.2em;
+}
+article section img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.clearboth {
+  clear: both;
+}
+
+
