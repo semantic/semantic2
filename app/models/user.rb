@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
+
   has_many :participations
   has_many :episodes, :through => :participations
+
+  validates_presence_of :name
 
   def self.create_from_oauth!(auth)
     create! do |user|
