@@ -1,6 +1,6 @@
 Semantic2::Application.routes.draw do
 
-  resources :episodes
+  resources :episodes, :path => 'episodis'
 
   # Session routes
   match "/auth/:provider/callback" => "sessions#create"
