@@ -11,7 +11,7 @@
 
 ## Run tests
 
-    bundle exec rspec spec/
+    bundle exec rake
 
 or, to have continuous testing, do
 
