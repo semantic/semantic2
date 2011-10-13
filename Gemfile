@@ -15,6 +15,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'haml'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'turn', :require => false
