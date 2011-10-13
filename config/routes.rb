@@ -2,6 +2,7 @@ Semantic2::Application.routes.draw do
 
   root :to => "episodes#index"
 
+  match "/episodis" => redirect('/')
   resources :episodes, :path => 'episodis'
 
   # Session routes
